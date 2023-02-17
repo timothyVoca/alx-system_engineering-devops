@@ -23,4 +23,6 @@ You can always find the manual on a command by using `man <command>` in the term
 
 ## Linux - Looking Around
 
+- `less`: view text files.
+- `file`: classify a file's content.
 
