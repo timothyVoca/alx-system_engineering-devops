@@ -23,6 +23,16 @@ You can always find the manual on a command by using `man <command>` in the term
 
 ## Linux - Looking Around
 
+Below are a few examples
 - `less`: view text files.
 - `file`: classify a file's content.
+- `ls /bin`: list the files in the /bin folder
+- `ls -l`: list files in thee working directory in long format
+- `ls -l /etc /bin`: list files in the `/bin` directory and the `/etc` directory in long format.
+- `ls -a`: list all files, including hidden files.
+- `ls -la`: list all files in long format, including hidden files.
 
+### A Closer look at Long format (introduction)
+
+`ls -l` lists files in long format and it would look like this:
+`drwxrwxr-x` `6 me` `me` `1024` `Oct 9 2019` `webname`
