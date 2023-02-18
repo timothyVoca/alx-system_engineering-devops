@@ -33,6 +33,7 @@ You can always find the manual on a command by using `man <command>` in the term
 - `cd -`: change to the pevious directory.
 - `cd ./bin`: change to the bin directory within the working directory.
 - `cd`: change to the root directory.
+- `rmdir`: remove directory if empty.
 
 ## Linux - Looking Around
 
