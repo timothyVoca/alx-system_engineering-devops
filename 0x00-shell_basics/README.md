@@ -44,12 +44,50 @@ Below are a few examples
 - `Oct 9 2019` shows the last modification date and time.
 - `webname` refers to the name of the file or directory.
 
-### Less
+---
 
-Less is a default program in unix that lets you view text files.
+- `less`: is a default program in unix that lets you view text files.
 
 > ## What is `text`?
 > computers can not directly read text files. They mostly read numbers. Hence there needs to be a means to convert text files to numbers and vice versa. One of the earliest and simplest method is the ASCII text (pronounced as "As-Key"), which is short for American Standard Code for Information Interchange.
 >
 > Text is a simple one-to-one mapping of characters to numbers. 50 characters of text translates to 50 bytes of data. 
 
+## Linux - Manipulating Files
+
+These are the commands most frequently used to mnipulate both files and directories in Linux commands.
+
+- `cp`: copy files and directories.
+- `mv`: move or rename file snd directories.
+- `rm`: remove files and directories.
+- `mkdir`: create directories.
+
+An example of this is `cp -u *.html <destination>`
+
+## Wildcards
+
+- `*` is one example of Wildcards. It means matching any characters. So, `*.html` means match any characters with `.html`
+- `?` means matches any single character.
+- `[characters]` matches any character that is a member of the set characters. The characters my be one of the following types below:
+	- `[:alnum:]` for Alphanumeric characters.
+	- `[:alpha:]` for Alphabetic characters.
+	- `[:digit:]` for Numerals.
+	- `[:upper:]` for Uppercase alphabetic characters.
+	- `[:lower:]` for Lowercase alphabetic characters.
+- `[!characters]`matches any character that is not a member of the set characters.
+
+You can use wildcards to make multiple selection criterias. For example:
+- `*` means All filenames
+- `g*` means All filenames that begin with the character "g"
+- `b*.txt` means All filenames that begin with the character "b" and end with the character ".txt"
+- `Data???` means Any filename that begins with the characters "Data" followed by exactly 3 more characters
+- `[abc]*` means Any filename that begins with "a" or "b" or "c" followed by any other characters.
+- `[[:upper:]]` meand Any filename that begins with an uppercase letter. This is an example of a character class.
+- `BACKUP [[:digit:]] [[:digit:]]` means Any filename that begins with the characters "BACKUP", followed by exactly two numericals.
+- `*[![:lower:]]` means filenames that does not end with a lowercase letter
+
+## `cp`
+
+This copies files and directories. The simplest form is:
+`cp file1 file2` or
+`cp file1 directory`
