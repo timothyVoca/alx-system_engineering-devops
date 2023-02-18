@@ -5,9 +5,22 @@ All projects will be tested on 'Ubuntu 20.04'
 
 ## Resources
 
+*Read or Watch:*
 * [Linux Navigation](http://linuxcommand.org/lc3_lts0020.php)
 * [Linux - Looking around](http://linuxcommand.org/lc3_lts0030.php)
 * [Linux - Manipulating files](http://linuxcommand.org/lc3_lts0050.php)
+
+*Or in your terminsl:*
+- `man pwd`
+- `man ls`
+- `man cd`
+- `man less`
+- `man touch`
+- `man cp`
+- `man mv`
+- `man rm`
+- `man mkdir`
+- `man rmdir`
 
 ## Linux Navigation
 
@@ -91,3 +104,17 @@ You can use wildcards to make multiple selection criterias. For example:
 This copies files and directories. The simplest form is:
 `cp file1 file2` or
 `cp file1 directory`
+
+Examples of `cp` and its options are
+- `cp file1 file2`: Copy content of file1 into file2. If file2 doesn't exist, it is created. If it exists, it is overwritten.
+- `cp -i file1 file2`: Same as above but "-i" (interactive) options means if file2 exists, prompt user if it should be overwritten or not.
+- `cp file1 dir1': Copy content of file1 (into a file named file1) inside of directory dir1
+- 'cp -R dir1 dir2`: Copy the content of directory dir1. If directory dir2 doesn't exist, create it. Else it creates a directory named dir1 within directory dir2.
+
+These principles are similat for `mv` and `rm`. 
+
+## Using Commands with Wildcards
+
+- `cp *.txt text_files` means Copy all files in the working directory with names ending with the characters ".txt" to an existing directory named test_files.
+- `mv dir ../*.bak dir2` means Move the subdirectory dir1 and all the files ending in ".bak" in the current working directory's parent directory to an existing directory named dir2
+- `rm *~` meand Delete all files in the current working directory that end with the character "~". Some applications create backup files using this naming scheme. You can use this tl clean them out.
