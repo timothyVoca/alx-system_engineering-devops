@@ -48,6 +48,8 @@ Below are a few examples
 
 Less is a default program in unix that lets you view text files.
 
->[!tip]- What is `text`?
+> ## What is `text`?
 > computers can not directly read text files. They mostly read numbers. Hence there needs to be a means to convert text files to numbers and vice versa. One of the earliest and simplest method is the ASCII text (pronounced as "As-Key"), which is short for American Standard Code for Information Interchange.
+>
 > Text is a simple one-to-one mapping of characters to numbers. 50 characters of text translates to 50 bytes of data. 
+
