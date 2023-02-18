@@ -36,3 +36,18 @@ Below are a few examples
 
 `ls -l` lists files in long format and it would look like this:
 `drwxrwxr-x` `6 me` `me` `1024` `Oct 9 2019` `webname`
+
+- `drwxrwxr-x` refers to the file permissions on the file (-) or directory (d). There will be more information on this [here]
+- `6 me` which is next, refers to the owner (u) of the file or directory.
+- `me` which is next, refers to the Group (g) with access to the file or directory.
+- `1024` refers to a series of numbers that  refer to the size (in bytes) of the file ot directory.
+- `Oct 9 2019` shows the last modification date and time.
+- `webname` refers to the name of the file or directory.
+
+### Less
+
+Less is a default program in unix that lets you view text files.
+
+>[!tip]- What is `text`?
+> computers can not directly read text files. They mostly read numbers. Hence there needs to be a means to convert text files to numbers and vice versa. One of the earliest and simplest method is the ASCII text (pronounced as "As-Key"), which is short for American Standard Code for Information Interchange.
+> Text is a simple one-to-one mapping of characters to numbers. 50 characters of text translates to 50 bytes of data. 
